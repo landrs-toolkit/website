@@ -1,0 +1,7 @@
+[submodule "themes/syna"]
+	path = themes/syna
+	url = https://git.okkur.org/syna
+[submodule "public"]
+	path = public
+	url = https://github.com/landrs-toolkit/landrs-toolkit.github.io.git
+	branch = master
