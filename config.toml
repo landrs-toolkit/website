@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "r4space.github.io"
+baseurl = "landrs-toolkit.github.io"
 languageCode = "en-us"
 title = "LANDRS"
 theme = "syna"
