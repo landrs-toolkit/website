@@ -1,0 +1,1430 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://schema.org", "http://dbpedia.org/resource", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa", "http://schema.landrs.org/schema", "http://purl.org/ieee1872-owl/cora-bare", "https://data.nasa.gov/ontologies/atmonto/ATM", "https://www.w3.org/2019/wot/td", "http://daselab.org/ContextualizedWinstonPartWhole", "http://www.w3.org/2000/01/rdf-schema", "http://www.wikidata.org/entity", "https://data.nasa.gov/ontologies/atmonto/equipment", "http://xmlns.com/foaf/0.1", "http://purl.org/dc/dcmitype", "file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary" ],
+    "title" : {
+      "en" : "Landrs Schema"
+    },
+    "iri" : "http://schema.landrs.org/schema/",
+    "version" : "0.0.1",
+    "author" : [ "_:genid2147483655" ],
+    "description" : {
+      "en" : "This ontology is developed as part of the Sloan Funded LANDRS project to advance UxV data interoperability"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/publicdomain/zero/1.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483655",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-02-01",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "landrs",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://schema.landrs.org/schema/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      }, {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Landrs Schema",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "9",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "14",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "8",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "39",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "16",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "7",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "65",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "62",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "70",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "85",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "34",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "86",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "56",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "90",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://schema.landrs.org/schema/UxV",
+    "equivalent" : [ "8" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Unmanned Vehicle",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "UxV",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UxV",
+      "en" : "Unmanned Vehicle"
+    },
+    "subClasses" : [ "7" ],
+    "comment" : {
+      "en" : "An unmanned vehicle or uncrewed vehicle is a vehicle without a person on board. Uncrewed vehicles can either be remote controlled or remote guided vehicles, or they can be autonomous vehicles which are capable of sensing their environment and navigating on their own."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "3",
+    "superClasses" : [ "4", "5", "6" ]
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q222946",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q222946"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Autopilot",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Flight Controller Board",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Flight Controller",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Autopilot",
+      "en" : "Autopilot"
+    },
+    "comment" : {
+      "en" : "Software to control and navigate an aircraft"
+    },
+    "id" : "1",
+    "superClasses" : [ "2", "11", "12" ]
+  }, {
+    "iri" : "http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type",
+    "baseIri" : "http://daselab.org/ContextualizedWinstonPartWhole",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PO-Component-Type"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q484000",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q484000"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q1527901",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q1527901"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/UAVComponent",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UAVComponent",
+      "en" : "Unmanned Aircraft Component"
+    },
+    "comment" : {
+      "en" : "Component of a Unmanned Aerial Vehicle"
+    },
+    "id" : "25",
+    "superClasses" : [ "35", "26" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Thing",
+    "equivalent" : [ "37" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://schema.org/Thing",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Thing",
+      "en" : "Thing"
+    },
+    "subClasses" : [ "20" ],
+    "comment" : {
+      "en" : "The most generic type of item."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q811909",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q811909"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/SurfaceVehicle",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SurfaceVehicle",
+      "en" : "Surface Vehicle"
+    },
+    "id" : "41",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Product",
+    "equivalent" : [ "16" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
+        "type" : "iri"
+      } ],
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://schema.org/Product",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Product",
+      "en" : "Product"
+    },
+    "subClasses" : [ "22", "35", "30", "28", "34", "32", "5" ],
+    "comment" : {
+      "en" : "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "20",
+    "superClasses" : [ "36", "37" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/UnmotorizedVehicle",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnmotorizedVehicle",
+      "en" : "Unmotorized Vehicle"
+    },
+    "id" : "51",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "http://schema.landrs.org/schema/",
+      "baseIri" : "http://schema.landrs.org",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent",
+    "baseIri" : "file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "software-agent"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/AutonomousRobot",
+    "equivalent" : [ "56" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutonomousRobot",
+      "en" : "Autonomous Robot"
+    },
+    "comment" : {
+      "en" : "An autonomous robot is a robot that performs behaviors or tasks with a high degree of autonomy (without external influence)."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "44",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/SensorPayload",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SensorPayload",
+      "en" : "Sensor Payload"
+    },
+    "comment" : {
+      "en" : "Payload that is a instrument platform such as cameras, atmospheric sensors, etc"
+    },
+    "id" : "57",
+    "superClasses" : [ "58", "59" ]
+  }, {
+    "iri" : "http://schema.org/Vehicle",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vehicle"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://schema.org/Product",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem",
+    "baseIri" : "https://data.nasa.gov/ontologies/atmonto/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AircraftNavigationSystem"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/dc/dcmitype/Event",
+    "baseIri" : "http://purl.org/dc/dcmitype",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/UAS",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Unmanned Aircraft System",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "UAS",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UAS",
+      "en" : "Unmanned Aircraft System"
+    },
+    "comment" : {
+      "en" : "An Unmanned Aerial Vehicle, ground-based controller and communication system."
+    },
+    "id" : "32",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://schema.org/Thing",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thing"
+    },
+    "subClasses" : [ "62", "20" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/UAV",
+    "equivalent" : [ "14", "64" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Unmanned Aerial Vehicle",
+        "type" : "label"
+      } ],
+      "altLable" : [ {
+        "identifier" : "altLable",
+        "language" : "en",
+        "value" : "UAV",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UAV",
+      "en" : "Unmanned Aerial Vehicle"
+    },
+    "comment" : {
+      "undefined" : "An aircraft without a human pilot on board and a type of unmanned vehicle. UAVs are a component of an unmanned aircraft system (UAS); which include a UAV, a ground-based controller, and a system of communications between the two. The flight of UAVs may operate with various degrees of autonomy: either under remote control by a human operator or autonomously by onboard computers."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "7",
+    "superClasses" : [ "3", "63" ]
+  }, {
+    "iri" : "http://schema.org/Event",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft",
+    "baseIri" : "https://data.nasa.gov/ontologies/atmonto/equipment",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q319224",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q319224"
+    },
+    "subClasses" : [ "67" ],
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/AutomatedRobot",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutomatedRobot",
+      "en" : "Automated Robot"
+    },
+    "id" : "46",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/System",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "System"
+    },
+    "subClasses" : [ "57" ],
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Mission",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mission",
+      "en" : "Mission"
+    },
+    "comment" : {
+      "en" : "Event associated with the deployment of a UxV"
+    },
+    "id" : "77",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/payload",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "payload"
+    },
+    "subClasses" : [ "57" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Vehicle",
+    "equivalent" : [ "60" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://schema.org/Vehicle",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Vehicle",
+      "en" : "Vehicle"
+    },
+    "subClasses" : [ "3", "83", "41", "84", "51", "48" ],
+    "comment" : {
+      "en" : "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "5",
+    "superClasses" : [ "16", "20" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Event",
+    "equivalent" : [ "65", "61" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "comment" : {
+      "en" : "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the <a class=\"localLink\" href=\"http://schema.org/offers\">offers</a> property. Repeated events may be structured as separate Event objects."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "62",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Airframe",
+    "equivalent" : [ "9" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airframe",
+      "en" : "Airframe"
+    },
+    "comment" : {
+      "en" : "The mechanical structure of an aircraft is known as the airframe. This structure is typically considered to include the fuselage, undercarriage, empennage and wings, and exclude the propulsion system."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "70",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/FlightControlSystem",
+    "equivalent" : [ "86" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightControlSystem",
+      "en" : "Flight Control System"
+    },
+    "comment" : {
+      "en" : "Aircraft system utilized to control flight surfaces"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://www.w3.org/2019/wot/td#Thing",
+    "baseIri" : "https://www.w3.org/2019/wot/td",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thing"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q11012",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q11012"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Robot",
+    "equivalent" : [ "89", "90" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Robot",
+      "en" : "Robot"
+    },
+    "subClasses" : [ "46", "44", "50", "48" ],
+    "comment" : {
+      "en" : "Mechanical or virtual artificial agent carrying out physical activities"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "34",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q11481471",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q11481471"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q2916098",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q2916098"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.org/ieee1872-owl/cora-bare#Robot",
+    "baseIri" : "http://purl.org/ieee1872-owl/cora-bare",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Robot"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/RemotelyPilotedRobot",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemotelyPilotedRobot",
+      "en" : "Remotely Piloted Robot"
+    },
+    "id" : "50",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q28816538",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q28816538"
+    },
+    "subClasses" : [ "25" ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/system",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "system"
+    },
+    "subClasses" : [ "22" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "82",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://schema.landrs.org/schema/CommunicationSystem",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommunicationSystem",
+      "en" : "Communication System"
+    },
+    "comment" : {
+      "en" : "Communication System, frequency and protocol by which a UxS communicates. For example Civilian UAV communications systems typically operate on frequencies of 2.4 GHz and 5.8 GHz. UAV communications systems work by using one frequency to control the aerial vehicle from the ground via a remote pilot while the other frequency is used to beam or relay First-Person View (FPV) video. By utilizing high-quality, reliable communications links, civilian UAVs are able to relay aerial visuals and data to those on the ground with ease, while still remaining in flight."
+    },
+    "id" : "91"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/GroundControlStation",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Ground_control_station",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GroundControlStation",
+      "en" : "Ground Control Station"
+    },
+    "comment" : {
+      "en" : "A ground control station (GCS) is a land- or sea-based control center that provides the facilities for human control of Unmanned Aerial Vehicles (UAVs or drones)."
+    },
+    "id" : "30",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Platform",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Platform"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Payload",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Payload",
+      "en" : "Payload"
+    },
+    "comment" : {
+      "en" : "Unmanned vehicle payload"
+    },
+    "id" : "67",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/RoboticVehicle",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoboticVehicle",
+      "en" : "Robotic Vehicle"
+    },
+    "comment" : {
+      "en" : "Robotic vehicles are machines that move autonomously on the ground, in the air, undersea, or in space. Such vehicles are “unmanned,” in the sense that no humans are on board. In general, these vehicles move by themselves, under their own power, with sensors and computational resources onboard to guide their motion."
+    },
+    "id" : "48",
+    "superClasses" : [ "34", "73", "5" ]
+  }, {
+    "iri" : "http://schema.landrs.org/schema/FlightControllerBoard",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightControllerBoard",
+      "en" : "Flight Controller Board"
+    },
+    "comment" : {
+      "en" : "A flight controller (FC) is a small circuit board of varying complexity. Its function is to direct the RPM of each motor in response to input. A command from the pilot for the multi-rotor to move forward is fed into the flight controller, which determines how to manipulate the motors accordingly."
+    },
+    "id" : "22",
+    "superClasses" : [ "23", "20" ]
+  }, {
+    "iri" : "https://data.nasa.gov/ontologies/atmonto/ATM#Flight",
+    "baseIri" : "https://data.nasa.gov/ontologies/atmonto/ATM",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q13425175",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q13425175"
+    },
+    "subClasses" : [ "77" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Component",
+    "equivalent" : [ "39", "13" ],
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component",
+      "en" : "Component"
+    },
+    "subClasses" : [ "25" ],
+    "comment" : {
+      "en" : "Winston Part-Whole PO-Component-Type to enumerate composition of a UxV"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "35",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://schema.org/SoftwareApplicaion",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareApplicaion"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/Body",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Body",
+      "en" : "UxV Body"
+    },
+    "subClasses" : [ "70" ],
+    "comment" : {
+      "en" : "Body of the UxV, for a UAV this would be an airframe"
+    },
+    "id" : "28",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://dbpedia.org/resource/Unmanned_aerial_vehicle",
+    "baseIri" : "http://dbpedia.org/resource",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unmanned_aerial_vehicle"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/MotorizedVehicle",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MotorizedVehicle",
+      "en" : "Motorized Vehicle"
+    },
+    "id" : "83",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.wikidata.org/entity/Q4810574",
+    "baseIri" : "http://www.wikidata.org/entity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q4810574"
+    },
+    "subClasses" : [ "48" ],
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/UnderwaterVehicle",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnderwaterVehicle",
+      "en" : "Underwater Vehicle"
+    },
+    "id" : "84",
+    "superClasses" : [ "5" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "100",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "16",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "20",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "20",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "20",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "20",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "20",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "20",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "36",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "20",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "34",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "34",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "34",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "34",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "5",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "6",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "5",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "28",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "73",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "63",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "37",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "78",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "35",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "37",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/component",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "component",
+      "en" : "Winston ODP Component p"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "Winston Component part-of relation po-component"
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://schema.landrs.org/schema/hasWhole",
+    "inverse" : "88",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "range" : "82",
+    "annotations" : {
+      "inverseOf" : [ {
+        "identifier" : "inverseOf",
+        "language" : "undefined",
+        "value" : "http://schema.landrs.org/schema/isPartOf",
+        "type" : "iri"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2002/07/owl#Thing",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://schema.landrs.org/schema/component",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasWhole",
+      "en" : "hasWhole"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "Winston ODP Whole relation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "58",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "59",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "5",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "5",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "5",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "domain" : "62",
+    "range" : "77",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "0",
+      "undefined" : "is a"
+    }
+  }, {
+    "domain" : "101",
+    "range" : "77",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "1",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "http://schema.landrs.org/schema/isPartOf",
+    "baseIri" : "http://schema.landrs.org/schema",
+    "range" : "82",
+    "annotations" : {
+      "inverseOf" : [ {
+        "identifier" : "inverseOf",
+        "language" : "undefined",
+        "value" : "http://schema.landrs.org/schema/hasWhole",
+        "type" : "iri"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://schema.landrs.org/schema/Component",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2002/07/owl#Thing",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "en" : "component"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "Winston ODP PartOf relation for component-integral object."
+    },
+    "attributes" : [ "object" ],
+    "id" : "88"
+  } ]
+}

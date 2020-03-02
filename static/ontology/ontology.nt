@@ -1,0 +1,499 @@
+<http://schema.landrs.org/schema/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://schema.landrs.org/schema/> <http://purl.org/dc/terms/created> "2020-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://schema.landrs.org/schema/> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "LANDRS: Linked and Networked Drones"@en .
+<http://schema.landrs.org/schema/> <http://purl.org/dc/terms/description> "This ontology is developed as part of the Sloan Funded LANDRS project to advance UxV data interoperability"@en .
+<http://schema.landrs.org/schema/> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://schema.landrs.org/schema/> <http://purl.org/dc/terms/title> "Landrs Schema"@en .
+<http://schema.landrs.org/schema/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "landrs" .
+<http://schema.landrs.org/schema/> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://schema.landrs.org/schema/" .
+<http://schema.landrs.org/schema/> <http://schema.org/versionInfo> "0.0.1" .
+<http://schema.landrs.org/schema/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/inverseOf
+<http://schema.org/inverseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/isPartOf
+<http://schema.org/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/sameAs
+<http://schema.org/sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/version
+<http://schema.org/version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/versionInfo
+<http://schema.org/versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLable
+<http://www.w3.org/2004/02/skos/core#altLable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.landrs.org/schema/component
+<http://schema.landrs.org/schema/component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.landrs.org/schema/component> <http://www.w3.org/2000/01/rdf-schema#comment> "Winston Component part-of relation po-component"@en .
+<http://schema.landrs.org/schema/component> <http://www.w3.org/2000/01/rdf-schema#label> "Winston ODP Component p"@en .
+# 
+# http://schema.landrs.org/schema/hasWhole
+<http://schema.landrs.org/schema/hasWhole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.landrs.org/schema/hasWhole> <http://www.w3.org/2002/07/owl#inverseOf> <http://schema.landrs.org/schema/isPartOf> .
+<http://schema.landrs.org/schema/hasWhole> <http://schema.org/domainIncludes> <http://schema.landrs.org/schema/component> .
+<http://schema.landrs.org/schema/hasWhole> <http://schema.org/inverseOf> <http://schema.landrs.org/schema/isPartOf> .
+<http://schema.landrs.org/schema/hasWhole> <http://schema.org/rangeIncludes> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.landrs.org/schema/hasWhole> <http://www.w3.org/2000/01/rdf-schema#comment> "Winston ODP Whole relation"@en .
+<http://schema.landrs.org/schema/hasWhole> <http://www.w3.org/2000/01/rdf-schema#label> "hasWhole"@en .
+# 
+# http://schema.landrs.org/schema/isPartOf
+<http://schema.landrs.org/schema/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.landrs.org/schema/isPartOf> <http://schema.org/domainIncludes> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.landrs.org/schema/isPartOf> <http://schema.org/inverseOf> <http://schema.landrs.org/schema/hasWhole> .
+<http://schema.landrs.org/schema/isPartOf> <http://schema.org/rangeIncludes> <http://schema.landrs.org/schema/Component> .
+<http://schema.landrs.org/schema/isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Winston ODP PartOf relation for component-integral object."@en .
+<http://schema.landrs.org/schema/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "component"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent
+<file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type
+<http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.landrs.org/schema/Component> .
+# 
+# http://dbpedia.org/resource/Unmanned_aerial_vehicle
+<http://dbpedia.org/resource/Unmanned_aerial_vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/resource/Unmanned_aerial_vehicle> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.landrs.org/schema/UAV> .
+# 
+# http://purl.org/dc/dcmitype/Event
+<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.landrs.org/schema/Event> .
+# 
+# http://purl.org/ieee1872-owl/cora-bare#Robot
+<http://purl.org/ieee1872-owl/cora-bare#Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ieee1872-owl/cora-bare#Robot> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.landrs.org/schema/Robot> .
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.landrs.org/schema/Airframe
+<http://schema.landrs.org/schema/Airframe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Airframe> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q222946> .
+<http://www.wikidata.org/entity/Q222946> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Airframe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Body> .
+<http://schema.landrs.org/schema/Airframe> <http://www.w3.org/2000/01/rdf-schema#comment> "The mechanical structure of an aircraft is known as the airframe. This structure is typically considered to include the fuselage, undercarriage, empennage and wings, and exclude the propulsion system."@en .
+<http://schema.landrs.org/schema/Airframe> <http://www.w3.org/2000/01/rdf-schema#label> "Airframe"@en .
+# 
+# http://schema.landrs.org/schema/AutomatedRobot
+<http://schema.landrs.org/schema/AutomatedRobot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/AutomatedRobot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Robot> .
+<http://schema.landrs.org/schema/AutomatedRobot> <http://www.w3.org/2000/01/rdf-schema#label> "Automated Robot"@en .
+# 
+# http://schema.landrs.org/schema/AutonomousRobot
+<http://schema.landrs.org/schema/AutonomousRobot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/AutonomousRobot> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q2916098> .
+<http://www.wikidata.org/entity/Q2916098> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/AutonomousRobot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Robot> .
+<http://schema.landrs.org/schema/AutonomousRobot> <http://www.w3.org/2000/01/rdf-schema#comment> "An autonomous robot is a robot that performs behaviors or tasks with a high degree of autonomy (without external influence)."@en .
+<http://schema.landrs.org/schema/AutonomousRobot> <http://www.w3.org/2000/01/rdf-schema#label> "Autonomous Robot"@en .
+# 
+# http://schema.landrs.org/schema/Autopilot
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent> .
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/SoftwareApplicaion> .
+<http://schema.org/SoftwareApplicaion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem> .
+<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/2000/01/rdf-schema#comment> "Software to control and navigate an aircraft"@en .
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/2000/01/rdf-schema#label> "Autopilot"@en .
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/2004/02/skos/core#altLabel> "Flight Controller"@en .
+<http://schema.landrs.org/schema/Autopilot> <http://www.w3.org/2004/02/skos/core#altLabel> "Flight Controller Board"@en .
+# 
+# http://schema.landrs.org/schema/Body
+<http://schema.landrs.org/schema/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Product> .
+# 
+# http://schema.landrs.org/schema/CommunicationSystem
+<http://schema.landrs.org/schema/CommunicationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.landrs.org/schema/Component
+<http://schema.landrs.org/schema/Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Component> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q811909> .
+<http://www.wikidata.org/entity/Q811909> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Product> .
+<http://schema.landrs.org/schema/Component> <http://www.w3.org/2000/01/rdf-schema#comment> "Winston Part-Whole PO-Component-Type to enumerate composition of a UxV"@en .
+<http://schema.landrs.org/schema/Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component"@en .
+# 
+# http://schema.landrs.org/schema/Event
+<http://schema.landrs.org/schema/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/Event> .
+<http://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://schema.org/Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the <a class=\"localLink\" href=\"http://schema.org/offers\">offers</a> property. Repeated events may be structured as separate Event objects."@en .
+<http://schema.landrs.org/schema/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# http://schema.landrs.org/schema/FlightControlSystem
+<http://schema.landrs.org/schema/FlightControlSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/FlightControlSystem> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q11481471> .
+<http://www.wikidata.org/entity/Q11481471> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/FlightControlSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Aircraft system utilized to control flight surfaces"@en .
+<http://schema.landrs.org/schema/FlightControlSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Control System"@en .
+# 
+# http://schema.landrs.org/schema/FlightControllerBoard
+<http://schema.landrs.org/schema/FlightControllerBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/FlightControllerBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Product> .
+<http://schema.landrs.org/schema/FlightControllerBoard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/system> .
+<http://www.w3.org/ns/sosa/system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/FlightControllerBoard> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight controller (FC) is a small circuit board of varying complexity. Its function is to direct the RPM of each motor in response to input. A command from the pilot for the multi-rotor to move forward is fed into the flight controller, which determines how to manipulate the motors accordingly."@en .
+<http://schema.landrs.org/schema/FlightControllerBoard> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Controller Board"@en .
+# 
+# http://schema.landrs.org/schema/GroundControlStation
+<http://schema.landrs.org/schema/GroundControlStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/GroundControlStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Product> .
+# 
+# http://schema.landrs.org/schema/Mission
+<http://schema.landrs.org/schema/Mission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Mission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.wikidata.org/entity/Q13425175> .
+<http://www.wikidata.org/entity/Q13425175> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.landrs.org/schema/MotorizedVehicle
+<http://schema.landrs.org/schema/MotorizedVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/MotorizedVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Vehicle> .
+<http://schema.landrs.org/schema/MotorizedVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Motorized Vehicle"@en .
+# 
+# http://schema.landrs.org/schema/Payload
+<http://schema.landrs.org/schema/Payload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Payload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.wikidata.org/entity/Q319224> .
+<http://www.wikidata.org/entity/Q319224> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.landrs.org/schema/Product
+<http://schema.landrs.org/schema/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Product> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/Product> .
+<http://schema.org/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Thing> .
+<http://schema.landrs.org/schema/Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://schema.landrs.org/schema/Product> <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms> .
+<http://schema.landrs.org/schema/Product> <http://schema.org/sameAs> <http://schema.org/Product> .
+<http://schema.landrs.org/schema/Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online."@en .
+<http://schema.landrs.org/schema/Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product"@en .
+# 
+# http://schema.landrs.org/schema/RemotelyPilotedRobot
+<http://schema.landrs.org/schema/RemotelyPilotedRobot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/RemotelyPilotedRobot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Robot> .
+<http://schema.landrs.org/schema/RemotelyPilotedRobot> <http://www.w3.org/2000/01/rdf-schema#label> "Remotely Piloted Robot"@en .
+# 
+# http://schema.landrs.org/schema/Robot
+<http://schema.landrs.org/schema/Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Robot> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q11012> .
+<http://www.wikidata.org/entity/Q11012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Robot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Product> .
+<http://schema.landrs.org/schema/Robot> <http://www.w3.org/2000/01/rdf-schema#comment> "Mechanical or virtual artificial agent carrying out physical activities"@en .
+<http://schema.landrs.org/schema/Robot> <http://www.w3.org/2000/01/rdf-schema#label> "Robot"@en .
+# 
+# http://schema.landrs.org/schema/RoboticVehicle
+<http://schema.landrs.org/schema/RoboticVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/RoboticVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Robot> .
+<http://schema.landrs.org/schema/RoboticVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Vehicle> .
+<http://schema.landrs.org/schema/RoboticVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.wikidata.org/entity/Q4810574> .
+<http://www.wikidata.org/entity/Q4810574> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/RoboticVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Robotic vehicles are machines that move autonomously on the ground, in the air, undersea, or in space. Such vehicles are “unmanned,” in the sense that no humans are on board. In general, these vehicles move by themselves, under their own power, with sensors and computational resources onboard to guide their motion."@en .
+<http://schema.landrs.org/schema/RoboticVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Robotic Vehicle"@en .
+# 
+# http://schema.landrs.org/schema/SensorPayload
+<http://schema.landrs.org/schema/SensorPayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/SensorPayload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/payload> .
+<http://schema.landrs.org/schema/payload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/SensorPayload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/System> .
+<http://www.w3.org/ns/sosa/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/SensorPayload> <http://www.w3.org/2000/01/rdf-schema#comment> "Payload that is a instrument platform such as cameras, atmospheric sensors, etc"@en .
+<http://schema.landrs.org/schema/SensorPayload> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor Payload"@en .
+# 
+# http://schema.landrs.org/schema/SurfaceVehicle
+<http://schema.landrs.org/schema/SurfaceVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/SurfaceVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Vehicle> .
+<http://schema.landrs.org/schema/SurfaceVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Surface Vehicle"@en .
+# 
+# http://schema.landrs.org/schema/Thing
+<http://schema.landrs.org/schema/Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Thing> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/Thing> .
+<http://schema.landrs.org/schema/Thing> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2002/07/owl#Thing> .
+<http://schema.landrs.org/schema/Thing> <http://schema.org/sameAs> <http://schema.org/Thing> .
+<http://schema.landrs.org/schema/Thing> <http://www.w3.org/2000/01/rdf-schema#comment> "The most generic type of item."@en .
+<http://schema.landrs.org/schema/Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing"@en .
+# 
+# http://schema.landrs.org/schema/UAS
+<http://schema.landrs.org/schema/UAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UAS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Product> .
+# 
+# http://schema.landrs.org/schema/UAV
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q484000> .
+<http://www.wikidata.org/entity/Q484000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/UxV> .
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft> .
+<https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.landrs.org/schema/UAVComponent
+<http://schema.landrs.org/schema/UAVComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UAVComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Component> .
+<http://schema.landrs.org/schema/UAVComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.wikidata.org/entity/Q28816538> .
+<http://www.wikidata.org/entity/Q28816538> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UAVComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Component of a Unmanned Aerial Vehicle"@en .
+<http://schema.landrs.org/schema/UAVComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Unmanned Aircraft Component"@en .
+# 
+# http://schema.landrs.org/schema/UnderwaterVehicle
+<http://schema.landrs.org/schema/UnderwaterVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UnderwaterVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Vehicle> .
+<http://schema.landrs.org/schema/UnderwaterVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Underwater Vehicle"@en .
+# 
+# http://schema.landrs.org/schema/UnmotorizedVehicle
+<http://schema.landrs.org/schema/UnmotorizedVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UnmotorizedVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Vehicle> .
+<http://schema.landrs.org/schema/UnmotorizedVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Unmotorized Vehicle"@en .
+# 
+# http://schema.landrs.org/schema/UxV
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.wikidata.org/entity/Q1527901> .
+<http://www.wikidata.org/entity/Q1527901> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Vehicle> .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2019/wot/td#Thing> .
+<https://www.w3.org/2019/wot/td#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.landrs.org/schema/Vehicle
+<http://schema.landrs.org/schema/Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Vehicle> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/Vehicle> .
+<http://schema.org/Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.landrs.org/schema/Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.landrs.org/schema/Product> .
+<http://schema.landrs.org/schema/Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Product> .
+<http://schema.landrs.org/schema/Vehicle> <http://schema.org/sameAs> <http://schema.org/Vehicle> .
+<http://schema.landrs.org/schema/Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."@en .
+<http://schema.landrs.org/schema/Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
+# 
+# http://schema.landrs.org/schema/payload
+# 
+# http://schema.org/Event
+# 
+# http://schema.org/Product
+# 
+# http://schema.org/SoftwareApplicaion
+# 
+# http://schema.org/Thing
+# 
+# http://schema.org/Vehicle
+# 
+# http://www.w3.org/2002/07/owl#Thing
+# 
+# http://www.w3.org/ns/sosa/Platform
+# 
+# http://www.w3.org/ns/sosa/System
+# 
+# http://www.w3.org/ns/sosa/system
+# 
+# http://www.wikidata.org/entity/Q11012
+# 
+# http://www.wikidata.org/entity/Q11481471
+# 
+# http://www.wikidata.org/entity/Q13425175
+# 
+# http://www.wikidata.org/entity/Q1527901
+# 
+# http://www.wikidata.org/entity/Q222946
+# 
+# http://www.wikidata.org/entity/Q28816538
+# 
+# http://www.wikidata.org/entity/Q2916098
+# 
+# http://www.wikidata.org/entity/Q319224
+# 
+# http://www.wikidata.org/entity/Q4810574
+# 
+# http://www.wikidata.org/entity/Q484000
+# 
+# http://www.wikidata.org/entity/Q811909
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.nasa.gov/ontologies/atmonto/ATM#Flight
+<https://data.nasa.gov/ontologies/atmonto/ATM#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft
+# 
+# https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem
+# 
+# https://www.w3.org/2019/wot/td#Thing
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://schema.landrs.org/schema/
+<http://schema.landrs.org/schema/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# http://schema.landrs.org/schema/Body
+<http://schema.landrs.org/schema/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/Body> <http://schema.landrs.org/schema/component> <http://schema.landrs.org/schema/UxV> .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/Body> <http://schema.landrs.org/schema/isPartOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.landrs.org/schema/Component> .
+_:genid2 <http://schema.landrs.org/schema/hasWhole> <http://schema.landrs.org/schema/UxV> .
+# 
+# http://schema.landrs.org/schema/CommunicationSystem
+<http://schema.landrs.org/schema/CommunicationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/CommunicationSystem> <http://schema.landrs.org/schema/component> <http://schema.landrs.org/schema/UAS> .
+<http://schema.landrs.org/schema/UAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://schema.landrs.org/schema/GroundControlStation
+<http://schema.landrs.org/schema/GroundControlStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/GroundControlStation> <http://schema.landrs.org/schema/component> <http://schema.landrs.org/schema/UAS> .
+# 
+# http://schema.landrs.org/schema/Mission
+<http://schema.landrs.org/schema/Mission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/Mission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.landrs.org/schema/Event> .
+<http://schema.landrs.org/schema/Mission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .
+# 
+# http://schema.landrs.org/schema/Payload
+<http://schema.landrs.org/schema/Payload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/Payload> <http://schema.landrs.org/schema/component> <http://schema.landrs.org/schema/UAS> .
+# 
+# http://schema.landrs.org/schema/UAS
+# 
+# http://schema.landrs.org/schema/UAV
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.landrs.org/schema/UAV> <http://schema.landrs.org/schema/component> <http://schema.landrs.org/schema/UAS> .
+# 
+# http://schema.landrs.org/schema/UxV
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://schema.landrs.org/schema/Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Body of the UxV, for a UAV this would be an airframe"@en .
+<http://schema.landrs.org/schema/Body> <http://www.w3.org/2000/01/rdf-schema#label> "UxV Body"@en .
+# 
+<http://schema.landrs.org/schema/CommunicationSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication System, frequency and protocol by which a UxS communicates. For example Civilian UAV communications systems typically operate on frequencies of 2.4 GHz and 5.8 GHz. UAV communications systems work by using one frequency to control the aerial vehicle from the ground via a remote pilot while the other frequency is used to beam or relay First-Person View (FPV) video. By utilizing high-quality, reliable communications links, civilian UAVs are able to relay aerial visuals and data to those on the ground with ease, while still remaining in flight."@en .
+<http://schema.landrs.org/schema/CommunicationSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Communication System"@en .
+# 
+<http://schema.landrs.org/schema/GroundControlStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A ground control station (GCS) is a land- or sea-based control center that provides the facilities for human control of Unmanned Aerial Vehicles (UAVs or drones)."@en .
+<http://schema.landrs.org/schema/GroundControlStation> <http://www.w3.org/2000/01/rdf-schema#label> "Ground Control Station"@en .
+<http://schema.landrs.org/schema/GroundControlStation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Ground_control_station> .
+# 
+<http://schema.landrs.org/schema/Mission> <http://www.w3.org/2000/01/rdf-schema#comment> "Event associated with the deployment of a UxV"@en .
+<http://schema.landrs.org/schema/Mission> <http://www.w3.org/2000/01/rdf-schema#label> "Mission"@en .
+# 
+<http://schema.landrs.org/schema/Payload> <http://www.w3.org/2000/01/rdf-schema#comment> "Unmanned vehicle payload"@en .
+<http://schema.landrs.org/schema/Payload> <http://www.w3.org/2000/01/rdf-schema#label> "Payload"@en .
+# 
+<http://schema.landrs.org/schema/UAS> <http://www.w3.org/2000/01/rdf-schema#comment> "An Unmanned Aerial Vehicle, ground-based controller and communication system."@en .
+<http://schema.landrs.org/schema/UAS> <http://www.w3.org/2000/01/rdf-schema#label> "Unmanned Aircraft System"@en .
+<http://schema.landrs.org/schema/UAS> <http://www.w3.org/2004/02/skos/core#altLabel> "UAS"@en .
+<http://schema.landrs.org/schema/UAS> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unmanned Aircraft System"@en .
+# 
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/2000/01/rdf-schema#comment> "An aircraft without a human pilot on board and a type of unmanned vehicle. UAVs are a component of an unmanned aircraft system (UAS); which include a UAV, a ground-based controller, and a system of communications between the two. The flight of UAVs may operate with various degrees of autonomy: either under remote control by a human operator or autonomously by onboard computers." .
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/2000/01/rdf-schema#label> "Unmanned Aerial Vehicle"@en .
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/2004/02/skos/core#altLable> "UAV"@en .
+<http://schema.landrs.org/schema/UAV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unmanned Aerial Vehicle"@en .
+# 
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2000/01/rdf-schema#comment> "An unmanned vehicle or uncrewed vehicle is a vehicle without a person on board. Uncrewed vehicles can either be remote controlled or remote guided vehicles, or they can be autonomous vehicles which are capable of sensing their environment and navigating on their own."@en .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2000/01/rdf-schema#label> "Unmanned Vehicle"@en .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2004/02/skos/core#altLabel> "UxV"@en .
+<http://schema.landrs.org/schema/UxV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unmanned Vehicle"@en .
+# 
+<http://schema.landrs.org/schema/bodyType> <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group> .
+<http://schema.landrs.org/schema/bodyType> <http://schema.org/domainIncludes> <http://schema.org/Vehicle> .
+<http://schema.landrs.org/schema/bodyType> <http://schema.org/isPartOf> <http://auto.schema.org> .
+<http://schema.landrs.org/schema/bodyType> <http://schema.org/rangeIncludes> <http://schema.org/QualitativeValue> .
+<http://schema.landrs.org/schema/bodyType> <http://schema.org/rangeIncludes> <http://schema.org/Text> .
+<http://schema.landrs.org/schema/bodyType> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
+<http://schema.landrs.org/schema/bodyType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the design and body style of the vehicle (e.g. quadcopter, glider."@en .
+<http://schema.landrs.org/schema/bodyType> <http://www.w3.org/2000/01/rdf-schema#label> "bodyType"@en .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

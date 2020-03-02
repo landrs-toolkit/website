@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/yeti.css" media="screen" />    <link rel="stylesheet" href="resources/site.css" media="screen" /> <title>Landrs Schema</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://schema.landrs.org/schema/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://schema.landrs.org/schema/","name":"Landrs Schema", "headline":"This ontology is developed as part of the Sloan Funded LANDRS project to advance UxV data interoperability", "datePublished":"2020-02-01", "version":"0.0.1", "license":"https://creativecommons.org/publicdomain/zero/1.0/"}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+ $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Landrs Schema</h1>
+<h2>Release  2020-02-01</h2>
+
+
+<dl>
+<dt>Revision:</dt>
+<dd>0.0.1</dd>
+<dt>License: </dt><dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/publicdomain/zero/1.0/-blue.svg" alt="https://creativecommons.org/publicdomain/zero/1.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd> Landrs Schema. Revision: 0.0.1.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This ontology is developed as part of the Sloan Funded LANDRS project to advance UxV data interoperability</span>
+</div>
+<div id="toc"></div>  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Landrs Schema: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul class="hlist">
+   <li>
+      <a href="#Airframe" title="http://schema.landrs.org/schema/Airframe">Airframe</a>
+   </li>
+   <li>
+      <a href="#AutomatedRobot" title="http://schema.landrs.org/schema/AutomatedRobot">Automated Robot</a>
+   </li>
+   <li>
+      <a href="#AutonomousRobot" title="http://schema.landrs.org/schema/AutonomousRobot">Autonomous Robot</a>
+   </li>
+   <li>
+      <a href="#Autopilot" title="http://schema.landrs.org/schema/Autopilot">Autopilot</a>
+   </li>
+   <li>
+      <a href="#Component" title="http://schema.landrs.org/schema/Component">Component</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/dcmitype/Event" title="http://purl.org/dc/dcmitype/Event">
+         <span>event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Event" title="http://schema.landrs.org/schema/Event">Event</a>
+   </li>
+   <li>
+      <a href="#FlightControlSystem"
+         title="http://schema.landrs.org/schema/FlightControlSystem">Flight Control System</a>
+   </li>
+   <li>
+      <a href="#FlightControllerBoard"
+         title="http://schema.landrs.org/schema/FlightControllerBoard">Flight Controller Board</a>
+   </li>
+   <li>
+      <a href="#GroundControlStation"
+         title="http://schema.landrs.org/schema/GroundControlStation">
+         <span>Ground Control Station</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Mission" title="http://schema.landrs.org/schema/Mission">
+         <span>Mission</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MotorizedVehicle" title="http://schema.landrs.org/schema/MotorizedVehicle">Motorized Vehicle</a>
+   </li>
+   <li>
+      <a href="#http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type"
+         title="http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type">
+         <span>p o component type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Payload" title="http://schema.landrs.org/schema/Payload">
+         <span>Payload</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+   </li>
+   <li>
+      <a href="#RemotelyPilotedRobot"
+         title="http://schema.landrs.org/schema/RemotelyPilotedRobot">Remotely Piloted Robot</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/ieee1872-owl/cora-bare#Robot" title="http://purl.org/ieee1872-owl/cora-bare#Robot">
+         <span>robot</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+   </li>
+   <li>
+      <a href="#RoboticVehicle" title="http://schema.landrs.org/schema/RoboticVehicle">Robotic Vehicle</a>
+   </li>
+   <li>
+      <a href="#SensorPayload" title="http://schema.landrs.org/schema/SensorPayload">Sensor Payload</a>
+   </li>
+   <li>
+      <a href="#SurfaceVehicle" title="http://schema.landrs.org/schema/SurfaceVehicle">Surface Vehicle</a>
+   </li>
+   <li>
+      <a href="#Thing" title="http://schema.landrs.org/schema/Thing">Thing</a>
+   </li>
+   <li>
+      <a href="#UnderwaterVehicle"
+         title="http://schema.landrs.org/schema/UnderwaterVehicle">Underwater Vehicle</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/resource/Unmanned_aerial_vehicle"
+         title="http://dbpedia.org/resource/Unmanned_aerial_vehicle">
+         <span>unmanned aerial vehicle</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UAV" title="http://schema.landrs.org/schema/UAV">
+         <span>Unmanned Aerial Vehicle Unmanned Aerial Vehicle</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UAVComponent" title="http://schema.landrs.org/schema/UAVComponent">Unmanned Aircraft Component</a>
+   </li>
+   <li>
+      <a href="#UAS" title="http://schema.landrs.org/schema/UAS">
+         <span>Unmanned Aircraft System Unmanned Aircraft System</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UxV" title="http://schema.landrs.org/schema/UxV">
+         <span>Unmanned Vehicle Unmanned Vehicle</span>
+      </a>
+   </li>
+   <li>
+      <a href="#UnmotorizedVehicle"
+         title="http://schema.landrs.org/schema/UnmotorizedVehicle">Unmotorized Vehicle</a>
+   </li>
+   <li>
+      <a href="#Body" title="http://schema.landrs.org/schema/Body">
+         <span>UxV Body</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+   </li>
+</ul><h4>Object Properties</h4><ul class="hlist">
+   <li>
+      <a href="#isPartOf" title="http://schema.landrs.org/schema/isPartOf">component</a>
+   </li>
+   <li>
+      <a href="#hasWhole" title="http://schema.landrs.org/schema/hasWhole">hasWhole</a>
+   </li>
+   <li>
+      <a href="#component" title="http://schema.landrs.org/schema/component">Winston ODP Component p</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Landrs Schema: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Landrs Schema classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Landrs Schema.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Airframe" title="http://schema.landrs.org/schema/Airframe">Airframe</a>
+      </li>
+      <li>
+         <a href="#AutomatedRobot" title="http://schema.landrs.org/schema/AutomatedRobot">Automated Robot</a>
+      </li>
+      <li>
+         <a href="#AutonomousRobot" title="http://schema.landrs.org/schema/AutonomousRobot">Autonomous Robot</a>
+      </li>
+      <li>
+         <a href="#Autopilot" title="http://schema.landrs.org/schema/Autopilot">Autopilot</a>
+      </li>
+      <li>
+         <a href="#Component" title="http://schema.landrs.org/schema/Component">Component</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/dcmitype/Event" title="http://purl.org/dc/dcmitype/Event">
+            <span>event</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Event" title="http://schema.landrs.org/schema/Event">Event</a>
+      </li>
+      <li>
+         <a href="#FlightControlSystem"
+            title="http://schema.landrs.org/schema/FlightControlSystem">Flight Control System</a>
+      </li>
+      <li>
+         <a href="#FlightControllerBoard"
+            title="http://schema.landrs.org/schema/FlightControllerBoard">Flight Controller Board</a>
+      </li>
+      <li>
+         <a href="#GroundControlStation"
+            title="http://schema.landrs.org/schema/GroundControlStation">
+            <span>Ground Control Station</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Mission" title="http://schema.landrs.org/schema/Mission">
+            <span>Mission</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MotorizedVehicle" title="http://schema.landrs.org/schema/MotorizedVehicle">Motorized Vehicle</a>
+      </li>
+      <li>
+         <a href="#http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type"
+            title="http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type">
+            <span>p o component type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Payload" title="http://schema.landrs.org/schema/Payload">
+            <span>Payload</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+      </li>
+      <li>
+         <a href="#RemotelyPilotedRobot"
+            title="http://schema.landrs.org/schema/RemotelyPilotedRobot">Remotely Piloted Robot</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/ieee1872-owl/cora-bare#Robot" title="http://purl.org/ieee1872-owl/cora-bare#Robot">
+            <span>robot</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+      </li>
+      <li>
+         <a href="#RoboticVehicle" title="http://schema.landrs.org/schema/RoboticVehicle">Robotic Vehicle</a>
+      </li>
+      <li>
+         <a href="#SensorPayload" title="http://schema.landrs.org/schema/SensorPayload">Sensor Payload</a>
+      </li>
+      <li>
+         <a href="#SurfaceVehicle" title="http://schema.landrs.org/schema/SurfaceVehicle">Surface Vehicle</a>
+      </li>
+      <li>
+         <a href="#Thing" title="http://schema.landrs.org/schema/Thing">Thing</a>
+      </li>
+      <li>
+         <a href="#UnderwaterVehicle"
+            title="http://schema.landrs.org/schema/UnderwaterVehicle">Underwater Vehicle</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/resource/Unmanned_aerial_vehicle"
+            title="http://dbpedia.org/resource/Unmanned_aerial_vehicle">
+            <span>unmanned aerial vehicle</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UAV" title="http://schema.landrs.org/schema/UAV">
+            <span>Unmanned Aerial Vehicle Unmanned Aerial Vehicle</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UAVComponent" title="http://schema.landrs.org/schema/UAVComponent">Unmanned Aircraft Component</a>
+      </li>
+      <li>
+         <a href="#UAS" title="http://schema.landrs.org/schema/UAS">
+            <span>Unmanned Aircraft System Unmanned Aircraft System</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UxV" title="http://schema.landrs.org/schema/UxV">
+            <span>Unmanned Vehicle Unmanned Vehicle</span>
+         </a>
+      </li>
+      <li>
+         <a href="#UnmotorizedVehicle"
+            title="http://schema.landrs.org/schema/UnmotorizedVehicle">Unmotorized Vehicle</a>
+      </li>
+      <li>
+         <a href="#Body" title="http://schema.landrs.org/schema/Body">
+            <span>UxV Body</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+      </li>
+   </ul>
+   <div class="entity" id="Airframe">
+      <h3>Airframe<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Airframe</p>
+      <div class="comment">
+         <span class="markdown">The mechanical structure of an aircraft is known as the airframe. This structure is typically considered to include the fuselage, undercarriage, empennage and wings, and exclude the propulsion system.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q222946">q222946</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Body" title="http://schema.landrs.org/schema/Body">UxV Body</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AutomatedRobot">
+      <h3>Automated Robot<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/AutomatedRobot</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AutonomousRobot">
+      <h3>Autonomous Robot<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/AutonomousRobot</p>
+      <div class="comment">
+         <span class="markdown">An autonomous robot is a robot that performs behaviors or tasks with a high degree of autonomy (without external influence).</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q2916098">q2916098</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Autopilot">
+      <h3>Autopilot<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Autopilot</p>
+      <div class="comment">
+         <span class="markdown">Software to control and navigate an aircraft</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem">aircraft navigation system</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted"
+                  title="file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent">software agent</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://schema.org/SoftwareApplicaion">software applicaion</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Component">
+      <h3>Component<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Component</p>
+      <div class="comment">
+         <span class="markdown">Winston Part-Whole PO-Component-Type to enumerate composition of a UxV</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q811909">q811909</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#UAVComponent" title="http://schema.landrs.org/schema/UAVComponent">Unmanned Aircraft Component</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPartOf" title="http://schema.landrs.org/schema/isPartOf">component</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/dcmitype/Event">
+      <h3>event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/dcmitype/Event</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Event" title="http://schema.landrs.org/schema/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Event">
+      <h3>Event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Event</p>
+      <div class="comment">
+         <span class="markdown">An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the &lt;a class="localLink" href="http://schema.org/offers"&gt;offers&lt;/a&gt; property. Repeated events may be structured as separate Event objects.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Event">event</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Mission" title="http://schema.landrs.org/schema/Mission">Mission</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FlightControlSystem">
+      <h3>Flight Control System<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/FlightControlSystem</p>
+      <div class="comment">
+         <span class="markdown">Aircraft system utilized to control flight surfaces</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q11481471">q11481471</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FlightControllerBoard">
+      <h3>Flight Controller Board<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/FlightControllerBoard</p>
+      <div class="comment">
+         <span class="markdown">A flight controller (FC) is a small circuit board of varying complexity. Its function is to direct the RPM of each motor in response to input. A command from the pilot for the multi-rotor to move forward is fed into the flight controller, which determines how to manipulate the motors accordingly.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/ns/sosa/system">system</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GroundControlStation">
+      <h3>Ground Control Station<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/GroundControlStation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#GroundControlStation">named individual</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Mission">
+      <h3>Mission<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Mission</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q13425175">q13425175</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#Mission">named individual</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MotorizedVehicle">
+      <h3>Motorized Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/MotorizedVehicle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type">
+      <h3>p o component type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Component" title="http://schema.landrs.org/schema/Component">Component</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Payload">
+      <h3>Payload<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Payload</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q319224">q319224</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#Payload">named individual</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Product">
+      <h3>Product<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Product</p>
+      <div class="comment">
+         <span class="markdown">Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>
+            <a href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms">http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Product">product</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Thing" title="http://schema.landrs.org/schema/Thing">Thing</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://schema.org/Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Component" title="http://schema.landrs.org/schema/Component">Component</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FlightControllerBoard"
+               title="http://schema.landrs.org/schema/FlightControllerBoard">Flight Controller Board</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GroundControlStation"
+               title="http://schema.landrs.org/schema/GroundControlStation">Ground Control Station</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UAS" title="http://schema.landrs.org/schema/UAS">Unmanned Aircraft System Unmanned Aircraft System</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Body" title="http://schema.landrs.org/schema/Body">UxV Body</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RemotelyPilotedRobot">
+      <h3>Remotely Piloted Robot<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/RemotelyPilotedRobot</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/ieee1872-owl/cora-bare#Robot">
+      <h3>robot<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/ieee1872-owl/cora-bare#Robot</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Robot">
+      <h3>Robot<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Robot</p>
+      <div class="comment">
+         <span class="markdown">Mechanical or virtual artificial agent carrying out physical activities</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q11012">q11012</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AutomatedRobot" title="http://schema.landrs.org/schema/AutomatedRobot">Automated Robot</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#AutonomousRobot" title="http://schema.landrs.org/schema/AutonomousRobot">Autonomous Robot</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RemotelyPilotedRobot"
+               title="http://schema.landrs.org/schema/RemotelyPilotedRobot">Remotely Piloted Robot</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RoboticVehicle" title="http://schema.landrs.org/schema/RoboticVehicle">Robotic Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RoboticVehicle">
+      <h3>Robotic Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/RoboticVehicle</p>
+      <div class="comment">
+         <span class="markdown">Robotic vehicles are machines that move autonomously on the ground, in the air, undersea, or in space. Such vehicles are “unmanned,” in the sense that no humans are on board. In general, these vehicles move by themselves, under their own power, with sensors and computational resources onboard to guide their motion.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Robot" title="http://schema.landrs.org/schema/Robot">Robot</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.wikidata.org/entity/Q4810574">q4810574</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SensorPayload">
+      <h3>Sensor Payload<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/SensorPayload</p>
+      <div class="comment">
+         <span class="markdown">Payload that is a instrument platform such as cameras, atmospheric sensors, etc</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.landrs.org/schema/payload">payload</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/ns/sosa/System">system</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SurfaceVehicle">
+      <h3>Surface Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/SurfaceVehicle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Thing">
+      <h3>Thing<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Thing</p>
+      <div class="comment">
+         <span class="markdown">The most generic type of item.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UnderwaterVehicle">
+      <h3>Underwater Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/UnderwaterVehicle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/resource/Unmanned_aerial_vehicle">
+      <h3>unmanned aerial vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/resource/Unmanned_aerial_vehicle</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#UAV" title="http://schema.landrs.org/schema/UAV">Unmanned Aerial Vehicle Unmanned Aerial Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UAV">
+      <h3>Unmanned Aerial Vehicle Unmanned Aerial Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/UAV</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q484000">q484000</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#UxV" title="http://schema.landrs.org/schema/UxV">Unmanned Vehicle Unmanned Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted"
+                  title="https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft">aircraft</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#UAV">named individual</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UAVComponent">
+      <h3>Unmanned Aircraft Component<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/UAVComponent</p>
+      <div class="comment">
+         <span class="markdown">Component of a Unmanned Aerial Vehicle</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Component" title="http://schema.landrs.org/schema/Component">Component</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.wikidata.org/entity/Q28816538">q28816538</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UAS">
+      <h3>Unmanned Aircraft System Unmanned Aircraft System<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/UAS</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="UxV">
+      <h3>Unmanned Vehicle Unmanned Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/UxV</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://www.wikidata.org/entity/Q1527901">q1527901</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/ns/sosa/Platform">platform</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="https://www.w3.org/2019/wot/td#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#UAV" title="http://schema.landrs.org/schema/UAV">Unmanned Aerial Vehicle Unmanned Aerial Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
+   <div class="entity" id="UnmotorizedVehicle">
+      <h3>Unmotorized Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/UnmotorizedVehicle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Vehicle" title="http://schema.landrs.org/schema/Vehicle">Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Body">
+      <h3>UxV Body<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Body</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Airframe" title="http://schema.landrs.org/schema/Airframe">Airframe</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#Body">named individual</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Vehicle">
+      <h3>Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/Vehicle</p>
+      <div class="comment">
+         <span class="markdown">A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Vehicle">vehicle</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Product" title="http://schema.landrs.org/schema/Product">Product</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://schema.org/Product">product</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#MotorizedVehicle" title="http://schema.landrs.org/schema/MotorizedVehicle">Motorized Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RoboticVehicle" title="http://schema.landrs.org/schema/RoboticVehicle">Robotic Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SurfaceVehicle" title="http://schema.landrs.org/schema/SurfaceVehicle">Surface Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UnderwaterVehicle"
+               title="http://schema.landrs.org/schema/UnderwaterVehicle">Underwater Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UxV" title="http://schema.landrs.org/schema/UxV">Unmanned Vehicle Unmanned Vehicle</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UnmotorizedVehicle"
+               title="http://schema.landrs.org/schema/UnmotorizedVehicle">Unmotorized Vehicle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#isPartOf" title="http://schema.landrs.org/schema/isPartOf">component</a>
+      </li>
+      <li>
+         <a href="#hasWhole" title="http://schema.landrs.org/schema/hasWhole">hasWhole</a>
+      </li>
+      <li>
+         <a href="#component" title="http://schema.landrs.org/schema/component">Winston ODP Component p</a>
+      </li>
+   </ul>
+   <div class="entity" id="isPartOf">
+      <h3>component<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/isPartOf</p>
+      <div class="comment">
+         <span class="markdown">Winston ODP PartOf relation for component-integral object.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>domain includes</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>range includes</dt>
+            <dd>
+               <a href="#Component" title="http://schema.landrs.org/schema/Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasWhole" title="http://schema.landrs.org/schema/hasWhole">hasWhole</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasWhole">
+      <h3>hasWhole<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/hasWhole</p>
+      <div class="comment">
+         <span class="markdown">Winston ODP Whole relation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>domain includes</dt>
+            <dd>
+               <span class="dotted" title="http://schema.landrs.org/schema/component">Winston ODP Component p</span>
+            </dd>
+            <dt>range includes</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPartOf" title="http://schema.landrs.org/schema/isPartOf">component</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="component">
+      <h3>Winston ODP Component p<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.landrs.org/schema/component</p>
+      <div class="comment">
+         <span class="markdown">Winston Component part-of relation po-component</span>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

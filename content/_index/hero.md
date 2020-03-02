@@ -7,32 +7,33 @@ background = "light" # can influence the text color
 particles = true
 
 title = "Syna Theme"
+color = "white"
 subtitle = "A toolkit for building applications that will create Linked Drone Data"
 
 [header]
-  image = "header.jpg"
+  image = "backgroundheader.jpg"
   height = "100px"
 
 [asset]
-  image = "logo-full.svg"
+  image = "landrs-logo-full_lg_whitebg.png"
   width = "500px" # optional - will default to image width
   #height = "150px" # optional - will default to image height
 
 [[buttons]]
   text = "Ontology Docs"
-  url = "#"
-  color = "dark" # primary, secondary, success, danger, warning, info, light, dark, link - default: primary
+  url = "ontology"
+  color = "info"   # primary, secondary, success, danger, warning, info, light, dark, link - default: primary
 
 [[buttons]]
   text = "Ontology Manager"
   url = "https://schema.landrs.org/"
-  color = "success"
+  color = "secondary"
 
 
 [[buttons]]
   text = "Drone Data Buddy Design"
-  url = "#Dronedatabuddy"
-  color = "light"
+  url = "ddby"
+  color = "warning"
 
 [[buttons]]
   text = "Repos"

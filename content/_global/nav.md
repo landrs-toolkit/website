@@ -4,10 +4,11 @@ fragment = "nav"
 date = "2018-05-17"
 weight = 0
 #background = ""
+[menus]
 
 [repo_button]
-  url = "https://github.com/okkur/syna"
-  text = "Star" # default: "Star"
+  url = "https://github.com/landrs-toolkit"
+  text = "LANDRS-Toolkit" # default: "Star"
   icon = "fab fa-github" # defaults: "fab fa-github"
 
 # Branding options

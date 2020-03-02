@@ -2,6 +2,31 @@
 
 This website uses Hugo and is based on https://git.okkur.org/syna-start
 
+## Dev notes:
+
+- Set colours in config.toml:
+    primary = "#ff6600"
+    secondary = "#868e96"
+    success = "#66ffff"
+    info = "#0066ff"
+    warning = "#9900cc"
+    danger = "#dc1200"
+    light = "#f8f9fa"
+    dark = "#343a40"
+- Add new pages: make a new folder in content by coping and editing an existing example (eg contact)
+- Put images for use everywhere in static/images, but if for use by a markdown page include in that resource folder (eg content/ddby/)
+- To include html content with its own style place folders in static
+- Edit header and footer on all pages: content/_global
+
+#### Dev on front page
+    - Edit main section:
+        - Edit buttons, logo, opening text: \_index/hero.md
+    - Edit text in lower section: 
+      -- Make edits directly in html in: layouts/partials/fragments/sample-custom-fragment.html
+    - TODO: Currently subtitle text color is forced in themes/syna/layouts/partials/fragments/hero.html, should work out how to change properly using hugo template
+
+
+
 ## To test Locally
 
 ### Prerequisites

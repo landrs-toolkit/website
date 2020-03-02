@@ -1,0 +1,976 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://schema.landrs.org/schema/"
+     xml:base="http://schema.landrs.org/schema/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.landrs.org/schema/"
+     xmlns:schema1="http://schema.org/">
+    <owl:Ontology rdf:about="http://schema.landrs.org/schema/">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-01</terms:created>
+        <terms:creator>
+            <rdf:Description rdf:nodeID="genid1">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+                <foaf:name xml:lang="en">LANDRS: Linked and Networked Drones</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:description xml:lang="en">This ontology is developed as part of the Sloan Funded LANDRS project to advance UxV data interoperability</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:title xml:lang="en">Landrs Schema</terms:title>
+        <vann:preferredNamespacePrefix>landrs</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://schema.landrs.org/schema/</vann:preferredNamespaceUri>
+        <schema1:versionInfo>0.0.1</schema1:versionInfo>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/inverseOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/inverseOf"/>
+    
+
+
+    <!-- http://schema.org/isPartOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/isPartOf"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://schema.org/sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/sameAs"/>
+    
+
+
+    <!-- http://schema.org/version -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/version"/>
+    
+
+
+    <!-- http://schema.org/versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLable -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLable"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.landrs.org/schema/component -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.landrs.org/schema/component">
+        <rdfs:comment xml:lang="en">Winston Component part-of relation po-component</rdfs:comment>
+        <rdfs:label xml:lang="en">Winston ODP Component p</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.landrs.org/schema/hasWhole -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.landrs.org/schema/hasWhole">
+        <owl:inverseOf rdf:resource="http://schema.landrs.org/schema/isPartOf"/>
+        <schema1:domainIncludes rdf:resource="http://schema.landrs.org/schema/component"/>
+        <schema1:inverseOf rdf:resource="http://schema.landrs.org/schema/isPartOf"/>
+        <schema1:rangeIncludes rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Winston ODP Whole relation</rdfs:comment>
+        <rdfs:label xml:lang="en">hasWhole</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.landrs.org/schema/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.landrs.org/schema/isPartOf">
+        <schema1:domainIncludes rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <schema1:inverseOf rdf:resource="http://schema.landrs.org/schema/hasWhole"/>
+        <schema1:rangeIncludes rdf:resource="http://schema.landrs.org/schema/Component"/>
+        <rdfs:comment xml:lang="en">Winston ODP PartOf relation for component-integral object.</rdfs:comment>
+        <rdfs:label xml:lang="en">component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent -->
+
+
+    <owl:Class rdf:about="file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent"/>
+    
+
+
+    <!-- http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type -->
+
+
+    <owl:Class rdf:about="http://daselab.org/ContextualizedWinstonPartWhole#PO-Component-Type">
+        <owl:equivalentClass rdf:resource="http://schema.landrs.org/schema/Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/resource/Unmanned_aerial_vehicle -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/resource/Unmanned_aerial_vehicle">
+        <owl:equivalentClass rdf:resource="http://schema.landrs.org/schema/UAV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Event -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Event">
+        <owl:equivalentClass rdf:resource="http://schema.landrs.org/schema/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cora-bare#Robot -->
+
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/cora-bare#Robot">
+        <owl:equivalentClass rdf:resource="http://schema.landrs.org/schema/Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Airframe -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Airframe">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q222946"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Body"/>
+        <rdfs:comment xml:lang="en">The mechanical structure of an aircraft is known as the airframe. This structure is typically considered to include the fuselage, undercarriage, empennage and wings, and exclude the propulsion system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Airframe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/AutomatedRobot -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/AutomatedRobot">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Robot"/>
+        <rdfs:label xml:lang="en">Automated Robot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/AutonomousRobot -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/AutonomousRobot">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q2916098"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Robot"/>
+        <rdfs:comment xml:lang="en">An autonomous robot is a robot that performs behaviors or tasks with a high degree of autonomy (without external influence).</rdfs:comment>
+        <rdfs:label xml:lang="en">Autonomous Robot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Autopilot -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Autopilot">
+        <rdfs:subClassOf rdf:resource="file:/home/jwyngaard/Widoco/../LANDRS-o/semantics.aero/pages/swim-vocabulary#software-agent"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareApplicaion"/>
+        <rdfs:subClassOf rdf:resource="https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem"/>
+        <rdfs:comment xml:lang="en">Software to control and navigate an aircraft</rdfs:comment>
+        <rdfs:label xml:lang="en">Autopilot</rdfs:label>
+        <skos:altLabel xml:lang="en">Flight Controller</skos:altLabel>
+        <skos:altLabel xml:lang="en">Flight Controller Board</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Body -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Body">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/CommunicationSystem -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/CommunicationSystem"/>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Component -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Component">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q811909"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Product"/>
+        <rdfs:comment xml:lang="en">Winston Part-Whole PO-Component-Type to enumerate composition of a UxV</rdfs:comment>
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Event -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Event">
+        <owl:equivalentClass rdf:resource="http://schema.org/Event"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:comment xml:lang="en">An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/offers&quot;&gt;offers&lt;/a&gt; property. Repeated events may be structured as separate Event objects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/FlightControlSystem -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/FlightControlSystem">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q11481471"/>
+        <rdfs:comment xml:lang="en">Aircraft system utilized to control flight surfaces</rdfs:comment>
+        <rdfs:label xml:lang="en">Flight Control System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/FlightControllerBoard -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/FlightControllerBoard">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Product"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/system"/>
+        <rdfs:comment xml:lang="en">A flight controller (FC) is a small circuit board of varying complexity. Its function is to direct the RPM of each motor in response to input. A command from the pilot for the multi-rotor to move forward is fed into the flight controller, which determines how to manipulate the motors accordingly.</rdfs:comment>
+        <rdfs:label xml:lang="en">Flight Controller Board</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/GroundControlStation -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/GroundControlStation">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Mission -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Mission">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q13425175"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/MotorizedVehicle -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/MotorizedVehicle">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Vehicle"/>
+        <rdfs:label xml:lang="en">Motorized Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Payload -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Payload">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q319224"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Product -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Product">
+        <owl:equivalentClass rdf:resource="http://schema.org/Product"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Thing"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"/>
+        <schema1:sameAs rdf:resource="http://schema.org/Product"/>
+        <rdfs:comment xml:lang="en">Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.</rdfs:comment>
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/RemotelyPilotedRobot -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/RemotelyPilotedRobot">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Robot"/>
+        <rdfs:label xml:lang="en">Remotely Piloted Robot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Robot -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Robot">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q11012"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Product"/>
+        <rdfs:comment xml:lang="en">Mechanical or virtual artificial agent carrying out physical activities</rdfs:comment>
+        <rdfs:label xml:lang="en">Robot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/RoboticVehicle -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/RoboticVehicle">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Robot"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q4810574"/>
+        <rdfs:comment xml:lang="en">Robotic vehicles are machines that move autonomously on the ground, in the air, undersea, or in space. Such vehicles are “unmanned,” in the sense that no humans are on board. In general, these vehicles move by themselves, under their own power, with sensors and computational resources onboard to guide their motion.</rdfs:comment>
+        <rdfs:label xml:lang="en">Robotic Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/SensorPayload -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/SensorPayload">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/payload"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/System"/>
+        <rdfs:comment xml:lang="en">Payload that is a instrument platform such as cameras, atmospheric sensors, etc</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor Payload</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/SurfaceVehicle -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/SurfaceVehicle">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Vehicle"/>
+        <rdfs:label xml:lang="en">Surface Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Thing -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Thing">
+        <owl:equivalentClass rdf:resource="http://schema.org/Thing"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <schema1:sameAs rdf:resource="http://schema.org/Thing"/>
+        <rdfs:comment xml:lang="en">The most generic type of item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UAS -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/UAS">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UAV -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/UAV">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q484000"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/UxV"/>
+        <rdfs:subClassOf rdf:resource="https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UAVComponent -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/UAVComponent">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Component"/>
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q28816538"/>
+        <rdfs:comment xml:lang="en">Component of a Unmanned Aerial Vehicle</rdfs:comment>
+        <rdfs:label xml:lang="en">Unmanned Aircraft Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UnderwaterVehicle -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/UnderwaterVehicle">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Vehicle"/>
+        <rdfs:label xml:lang="en">Underwater Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UnmotorizedVehicle -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/UnmotorizedVehicle">
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Vehicle"/>
+        <rdfs:label xml:lang="en">Unmotorized Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UxV -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/UxV">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q1527901"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2019/wot/td#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Vehicle -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/Vehicle">
+        <owl:equivalentClass rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://schema.landrs.org/schema/Product"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Product"/>
+        <schema1:sameAs rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:comment xml:lang="en">A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.landrs.org/schema/payload -->
+
+
+    <owl:Class rdf:about="http://schema.landrs.org/schema/payload"/>
+    
+
+
+    <!-- http://schema.org/Event -->
+
+
+    <owl:Class rdf:about="http://schema.org/Event"/>
+    
+
+
+    <!-- http://schema.org/Product -->
+
+
+    <owl:Class rdf:about="http://schema.org/Product"/>
+    
+
+
+    <!-- http://schema.org/SoftwareApplicaion -->
+
+
+    <owl:Class rdf:about="http://schema.org/SoftwareApplicaion"/>
+    
+
+
+    <!-- http://schema.org/Thing -->
+
+
+    <owl:Class rdf:about="http://schema.org/Thing"/>
+    
+
+
+    <!-- http://schema.org/Vehicle -->
+
+
+    <owl:Class rdf:about="http://schema.org/Vehicle"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Platform -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/System -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/System"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/system -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/system"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q11012 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q11012"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q11481471 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q11481471"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q13425175 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q13425175"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q1527901 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q1527901"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q222946 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q222946"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q28816538 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q28816538"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q2916098 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q2916098"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q319224 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q319224"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q4810574 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q4810574"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q484000 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q484000"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q811909 -->
+
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q811909"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://data.nasa.gov/ontologies/atmonto/ATM#Flight -->
+
+
+    <owl:Class rdf:about="https://data.nasa.gov/ontologies/atmonto/ATM#Flight"/>
+    
+
+
+    <!-- https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft -->
+
+
+    <owl:Class rdf:about="https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft"/>
+    
+
+
+    <!-- https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem -->
+
+
+    <owl:Class rdf:about="https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem"/>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/td#Thing -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/2019/wot/td#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.landrs.org/schema/ -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Body -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/Body">
+        <component rdf:resource="http://schema.landrs.org/schema/UxV"/>
+        <isPartOf>
+            <rdf:Description rdf:nodeID="genid2">
+                <rdf:type rdf:resource="http://schema.landrs.org/schema/Component"/>
+                <hasWhole rdf:resource="http://schema.landrs.org/schema/UxV"/>
+            </rdf:Description>
+        </isPartOf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.landrs.org/schema/CommunicationSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/CommunicationSystem">
+        <component rdf:resource="http://schema.landrs.org/schema/UAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.landrs.org/schema/GroundControlStation -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/GroundControlStation">
+        <component rdf:resource="http://schema.landrs.org/schema/UAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Mission -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/Mission">
+        <rdf:type rdf:resource="http://schema.landrs.org/schema/Event"/>
+        <rdf:type rdf:resource="https://data.nasa.gov/ontologies/atmonto/ATM#Flight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.landrs.org/schema/Payload -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/Payload">
+        <component rdf:resource="http://schema.landrs.org/schema/UAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UAS -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/UAS"/>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UAV -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/UAV">
+        <component rdf:resource="http://schema.landrs.org/schema/UAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.landrs.org/schema/UxV -->
+
+
+    <owl:NamedIndividual rdf:about="http://schema.landrs.org/schema/UxV"/>
+    <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <foaf:name xml:lang="en">LANDRS: Linked and Networked Drones</foaf:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/Body">
+        <rdfs:comment xml:lang="en">Body of the UxV, for a UAV this would be an airframe</rdfs:comment>
+        <rdfs:label xml:lang="en">UxV Body</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/CommunicationSystem">
+        <rdfs:comment xml:lang="en">Communication System, frequency and protocol by which a UxS communicates. For example Civilian UAV communications systems typically operate on frequencies of 2.4 GHz and 5.8 GHz. UAV communications systems work by using one frequency to control the aerial vehicle from the ground via a remote pilot while the other frequency is used to beam or relay First-Person View (FPV) video. By utilizing high-quality, reliable communications links, civilian UAVs are able to relay aerial visuals and data to those on the ground with ease, while still remaining in flight.</rdfs:comment>
+        <rdfs:label xml:lang="en">Communication System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/GroundControlStation">
+        <rdfs:comment xml:lang="en">A ground control station (GCS) is a land- or sea-based control center that provides the facilities for human control of Unmanned Aerial Vehicles (UAVs or drones).</rdfs:comment>
+        <rdfs:label xml:lang="en">Ground Control Station</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ground_control_station"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/Mission">
+        <rdfs:comment xml:lang="en">Event associated with the deployment of a UxV</rdfs:comment>
+        <rdfs:label xml:lang="en">Mission</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/Payload">
+        <rdfs:comment xml:lang="en">Unmanned vehicle payload</rdfs:comment>
+        <rdfs:label xml:lang="en">Payload</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/UAS">
+        <rdfs:comment xml:lang="en">An Unmanned Aerial Vehicle, ground-based controller and communication system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unmanned Aircraft System</rdfs:label>
+        <skos:altLabel xml:lang="en">UAS</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Unmanned Aircraft System</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/UAV">
+        <rdfs:comment>An aircraft without a human pilot on board and a type of unmanned vehicle. UAVs are a component of an unmanned aircraft system (UAS); which include a UAV, a ground-based controller, and a system of communications between the two. The flight of UAVs may operate with various degrees of autonomy: either under remote control by a human operator or autonomously by onboard computers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unmanned Aerial Vehicle</rdfs:label>
+        <skos:altLable xml:lang="en">UAV</skos:altLable>
+        <skos:prefLabel xml:lang="en">Unmanned Aerial Vehicle</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/UxV">
+        <rdfs:comment xml:lang="en">An unmanned vehicle or uncrewed vehicle is a vehicle without a person on board. Uncrewed vehicles can either be remote controlled or remote guided vehicles, or they can be autonomous vehicles which are capable of sensing their environment and navigating on their own.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unmanned Vehicle</rdfs:label>
+        <skos:altLabel xml:lang="en">UxV</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Unmanned Vehicle</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.landrs.org/schema/bodyType">
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group"/>
+        <schema1:domainIncludes rdf:resource="http://schema.org/Vehicle"/>
+        <schema1:isPartOf rdf:resource="http://auto.schema.org"/>
+        <schema1:rangeIncludes rdf:resource="http://schema.org/QualitativeValue"/>
+        <schema1:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema1:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <rdfs:comment xml:lang="en">Indicates the design and body style of the vehicle (e.g. quadcopter, glider.</rdfs:comment>
+        <rdfs:label xml:lang="en">bodyType</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
