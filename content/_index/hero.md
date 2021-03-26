@@ -33,11 +33,20 @@ subtitle = "A toolkit for building applications that will create Linked Drone Da
 [[buttons]]
   text = "Drone Data Buddy Design"
   url = "ddby"
-  color = "warning"
+  color = "info"
 
 [[buttons]]
   text = "Repos"
   url = "https://github.com/landrs-toolkit"
   color = "light"
 
+[[buttons]]
+  text = "Publications and Reports"
+  url = "publications"
+  color = "light"
+
+[[buttons]]
+  text = "Events"
+  url = "events"
+  color = "primary"
 +++

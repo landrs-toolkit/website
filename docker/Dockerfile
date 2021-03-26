@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 RUN apt-get -q update \
     && apt-get install -yq --no-install-recommends wget golang git\
-	&& apt-get clean && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* \
     && echo "===============Finished Update======================"
 
 WORKDIR /usr/src/app
@@ -13,7 +13,8 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v0.72.0/hugo_extende
     && hugo --help \
     && rm  hugo*_Linux-64bit.deb \
     && echo "==================Finished Install of hugo=======================" 
- 
+
+CMD [ "hugo", "server", "--buildDrafts", "--watch", "--bind", "0.0.0.0" ] 
 
 
 
